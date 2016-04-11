@@ -71,7 +71,7 @@
     //XMGLogFun;
     
     XMGNavigationController* nav=[[XMGNavigationController alloc] initWithRootViewController:vc];
-    [[UINavigationBar appearance]  setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+  
     [self addChildViewController:nav];
     
 

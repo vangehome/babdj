@@ -9,13 +9,15 @@
 #import "XMGNavigationController.h"
 
 @implementation XMGNavigationController
+
++(void)initialize{
+    [[UINavigationBar appearanceWhenContainedIn:[self class], nil]  setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+
+
+}
 -(void)viewDidLoad{
     [super viewDidLoad];
-    
-    
-    
-      XMGLogFun;
-    
+
 }
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     

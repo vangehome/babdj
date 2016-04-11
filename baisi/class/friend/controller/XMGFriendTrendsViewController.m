@@ -7,7 +7,7 @@
 //
 
 #import "XMGFriendTrendsViewController.h"
-
+#import "XMGRecommendViewController.h"
 @implementation XMGFriendTrendsViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
@@ -16,9 +16,13 @@
     UIBarButtonItem* item=[UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" action:@selector(click) target:self];
     self.navigationItem.leftBarButtonItem=item;
         XMGBG;
-    XMGLogFun;
+   //nib
+    
 }
 -(void)click{
+    
+    XMGRecommendViewController* vc=[[XMGRecommendViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
     XMGLogFun;
 }
 @end

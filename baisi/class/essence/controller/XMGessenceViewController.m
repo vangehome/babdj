@@ -9,6 +9,7 @@
 #import "XMGessenceViewController.h"
 
 @implementation XMGessenceViewController
+
 -(void)viewDidLoad{
     [super viewDidLoad];
     //
@@ -17,20 +18,13 @@
     
     UIBarButtonItem* item= [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" action:@selector(click) target:self];
     self.navigationItem.leftBarButtonItem=item;
-     
-     XMGBG;
-    XMGLogFun;
+     XMGBG;//背景色
+    
 }
 -(void)click{
     
    
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-  
-    
-    UIViewController* vc=[[UIViewController alloc ] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
 
 @end
