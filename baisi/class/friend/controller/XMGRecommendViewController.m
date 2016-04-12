@@ -35,7 +35,7 @@
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //
-                [SVProgressHUD showErrorWithStatus:@"加载失败"];
+        [SVProgressHUD showErrorWithStatus:@"加载失败"];
         [self.navigationController popViewControllerAnimated:YES];
         [SVProgressHUD dismiss];
 
@@ -48,7 +48,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell* cell=[[UITableViewCell alloc]init];
+    return cell;
+}
 /*
 #pragma mark - Navigation
 

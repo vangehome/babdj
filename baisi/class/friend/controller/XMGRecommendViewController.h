@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XMGRecommendViewController : UIViewController
+@interface XMGRecommendViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
